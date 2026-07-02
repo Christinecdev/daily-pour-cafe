@@ -1,0 +1,196 @@
+
+
+body{
+    background-image: url(bak.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+/**TYPOGRAPHY**/
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1, h2, p{
+    text-align: center;
+
+}
+
+
+h1, h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
+    margin-bottom: 10px;
+
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+ 
+}
+
+/**ESTABLISHED**/
+
+.established{font-style:italic;}
+hr{height:2px;
+background-color: brown;
+border-color: brown;
+}
+
+
+.body{
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    background-image: url(homebg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home{
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 80px 40px 80px;
+    max-width: 700px;
+}
+
+header{
+    background-color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 80px 40px 80px;
+    max-width: 700px;
+    text-align-last: center;
+
+}
+
+
+nav{
+   gap: 15px;
+   justify-content: center;
+   display: flex;
+}
+
+/*==========SITE HEADER=========*/
+
+.site-header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+li::before{
+    content:"✓  ";
+    color: green;
+}
+
+
+/**MENU**/
+
+.menu{
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 80px 40px 80px;
+    max-width: 700px;
+}
+
+/**ITEM MENU**/
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.flavor{
+    text-align: left;
+    width: 75%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+/**FOOTER**/
+
+footer{
+    font-size:14px;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+address{
+    font-style:normal;
+}
+
+.address{margin-bottom:5px
+}
+
+a{color:brown;
+text-decoration: none;}
+
+a:visited{color:brown;}
+a:hover{color:black;}
+a:active:{color:brown;}
+a:focus{outline: 2px solid brown;}
+
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+
+}
+section{
+    padding-bottom: 30px;
+}
+
+.card-page{
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+
+.business-card{
+    background-color: antiquewhite;
+    width: 100%;
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 16px;
+    margin: 100px auto;
+    gap: 20px;
+    max-width: 400px;
+ 
+
+}
+
+.profile-image{
+    width: 100pz;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: center;
+
+}
+
