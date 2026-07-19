@@ -1,136 +1,297 @@
+/*==========SITE ROOT=========*/
 
+:root{
+    --background:#F5EFE6;
+    --card:#FFFDF9;
+    --coffee:#4B3621;
+    --caramel:#8B5E3C;
+    --text:#333333;
+    --soft:#6D6D6D;
+    --border:#E6D8C7;
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+}
 
-body{
-    background-image: url(bak.png);
-    background-repeat: no-repeat;
-    background-size:cover;
+/*==========SITE BODY=========*/
+
+  body { background: var(--background);
     font-family: sans-serif;
-    padding: 40px;
+    margin: 0;
+    padding: 0;
+}  
+
+/*==========HERO SECTION=========*/
+
+.hero img{
+    Width:100%;
+    Height:auto;
 }
 
-/**TYPOGRAPHY**/
 
-h1{
-    font-size: 40px;
-}
+/*==========TYPOGRAPHY=========*/
 
 h2{
     font-size: 30px;
+    font-family: Georgia, serif;
 }
 
-h1, h2, p{
+h1, h2{
+    font-family:garamond, Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
     text-align: center;
 
 }
-
-
-h1, h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', serif;
-    margin-bottom: 10px;
-
+h3{
+    font-family: georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5c4033;
+    text-align: center;
 }
 
 p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #5f5f5f;
     margin-top: 5px;
     margin-bottom: 15px;
- 
-}
-
-/**ESTABLISHED**/
-
-.established{font-style:italic;}
-hr{height:2px;
-background-color: brown;
-border-color: brown;
-}
-
-
-.body{
     text-align: center;
-    padding: 40px;
-    font-size: 20px;
-    background-image: url(homebg.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.home{
-    background-color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 80px 40px 80px;
-    max-width: 700px;
-}
-
-header{
-    background-color: antiquewhite;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 80px 40px 80px;
-    max-width: 700px;
-    text-align-last: center;
-
-}
-
-
-nav{
-   gap: 15px;
-   justify-content: center;
-   display: flex;
 }
 
 /*==========SITE HEADER=========*/
 
 .site-header{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 50px;
 }
+
+.site-header h1{
+    font-size:2.6rem;
+    color:var(--coffee);
+}
+
+
+/*==========NAV /NAV A =========*/
+
+nav{
+   display: flex;
+   gap: 2rem;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--coffee);
+    margin:0 1rem;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:var(--caramel);
+}
+
+.nav-line{
+    margin-top: 0;
+}
+
+hr{height:1px;
+background-color: beige;
+border-color: grey;
+}
+
+/*==========CONTAINER=========*/
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.home-container{
+    max-width: 700px;    
+    text-align: center;
+}
+
+/*==========SECTION=========*/
+
+section{
+    padding:2rem 0;
+}
+
+.home-section{
+    padding: 3rem 0;
+}
+.hours{
+    padding-bottom: 2rem;
+}
+/*==========ESTABLISHED=========*/
+
+.established{font-style:italic;}
+
+
+/*==========LI / LIST STYLES=========*/
 
 li{
     list-style: none;
-    text-align: center;
 }
+
 li::before{
-    content:"✓  ";
+    content:"✔️  ";
     color: green;
 }
-
-
-/**MENU**/
-
-.menu{
-    width: 80%;
-    background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 80px 40px 80px;
-    max-width: 700px;
-}
-
-/**ITEM MENU**/
-
-.item p{
+.check-list, .featured-drinks{
     display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 18px;
+    text-align: left;
+}
+.featured-drinks{
+    margin-bottom: 1rem;
 }
 
-.flavor{
-    text-align: left;
-    width: 75%;
+.featured-drinks h3{
+    margin-bottom: 1rem;
+}
+.featured-drinks p{
+    margin: 0;
+}
+/* =========MENU PAGE========= */
+
+body.menu{
+    background:var(--background);
+    color:var(--text);
+    font-family:Segoe UI, sans-serif;
+    line-height:1.7;
+}
+
+.section-intro{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.menu-section{
+    margin-bottom:3rem;
+}
+
+.menu-section h2{
+    color:var(--coffee);
+    font-size:2.3rem;
+    margin: 2rem;
+}
+
+.category-description{
+    text-align:center;
+    color:var(--soft);
+    max-width:650px;
+    margin:0 auto 2rem;
+}
+
+.menu-section img{
+    margin: 0;
+    border-radius: 20px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+gap:2rem;
+}
+
+.menu-card{
+    background:var(--card);
+    border-radius:18px;
+    padding:1.5rem;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    border-top:4px solid var(--caramel);
+}
+
+.menu-card:hover{
+    transform:translateY(-6px);
+}
+
+.menu-card h3{
+    color:var(--coffee);
+    margin-bottom:0.8rem;
+    font-size:1.35rem;
+}
+
+.description{
+    color:var(--soft);
+    margin-bottom:1rem;
+    font-size:.95rem;
 }
 
 .price{
-    text-align: right;
-    width: 25%;
+    color:var(--caramel);
+    font-size:1.2rem;
+    font-weight:bold;
 }
 
-/**FOOTER**/
+.menu-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 0.8rem;
+}
+
+.menu-section:last-child{margin-bottom: 0;}
+
+/* ==========BUSINESS CARD========== */
+
+.business-card{
+    background-color: antiquewhite;
+    color: var(--coffee);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 100px auto;
+    gap: 20px;
+    max-width: 700px;
+}
+.business-card a{
+    text-decoration: none;
+    color: brown;
+    font-weight:600;
+}
+.business-card a:hover{color:black;}
+
+ .social-media a {
+    margin:0 1rem;
+    font-weight:600;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: center;
+}
+
+.business-card p{
+    color: #333333;
+    line-height: 1.6;
+}
+
+* ====================================
+   FOOTER
+==================================== */
 
 footer{
     font-size:14px;
+    text-align:center;
+    padding: 3rem 0;
+    color:var(--soft);
 }
 
 .bottom-line{
@@ -144,53 +305,10 @@ address{
 .address{margin-bottom:5px
 }
 
-a{color:brown;
+footer a{color:brown;
 text-decoration: none;}
-
-a:visited{color:brown;}
-a:hover{color:black;}
-a:active:{color:brown;}
-a:focus{outline: 2px solid brown;}
-
-
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    margin-top: 25px;
-
-}
-section{
-    padding-bottom: 30px;
-}
-
-.card-page{
-    background-color: rosybrown;
-    font-family: Arial, sans-serif;
-}
-
-.business-card{
-    background-color: antiquewhite;
-    width: 100%;
-    padding: 20px;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 16px;
-    margin: 100px auto;
-    gap: 20px;
-    max-width: 400px;
- 
-
-}
-
-.profile-image{
-    width: 100pz;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: center;
-
-}
+footer a:visited{color:brown;}
+footer a:hover{color:black;}
+footer a:active:{color:brown;}
+footer a:focus{outline: 2px solid brown;}
 
