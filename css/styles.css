@@ -28,6 +28,7 @@
 .hero-banner img{
     Width:100%;
     Height:auto;
+    object-fit: cover;
 }
 
 
@@ -187,7 +188,8 @@ body.menu{
 .menu-section h2{
     color:var(--coffee);
     font-size:2.3rem;
-    margin: 2rem;
+    margin: 0;
+    text-align: center;
 }
 
 .category-description{
@@ -287,9 +289,7 @@ gap:2rem;
     line-height: 1.6;
 }
 
-* ====================================
-   FOOTER
-==================================== */
+/* ========== FOOTER ========== */
 
 footer{
     font-size:14px;
@@ -316,3 +316,48 @@ footer a:hover{color:black;}
 footer a:active:{color:brown;}
 footer a:focus{outline: 2px solid brown;}
 
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 600px){
+    .hero-banner img{
+        height: 250px;
+    }
+   
+    .site-header{
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+    .site-header h1{
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    .menu-card{
+        padding: 1rem;
+    }
+    
+    .menu-card h2{
+        font-size: 1.5rem;
+    }
+    .description, .category-description{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+     .business-card{
+        width: 90%;
+        padding: 15px;
+        margin: 50px auto;
+    }
+    nav{
+        margin-top: 1rem;
+    }
+    nav a{
+        margin: 0.1rem;
+    }
+    .section-title{ 
+        gap: 8px;
+    }
+    .menu-section h2{
+        font-size: 2rem;
+    }
+}
