@@ -1,3 +1,7 @@
+*{box-sizing:border-box;
+}
+
+
 /*==========SITE ROOT=========*/
 
 :root{
@@ -21,7 +25,7 @@
 
 /*==========HERO SECTION=========*/
 
-.hero img{
+.hero-banner img{
     Width:100%;
     Height:auto;
 }
