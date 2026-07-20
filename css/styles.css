@@ -321,6 +321,7 @@ footer a:focus{outline: 2px solid brown;}
 @media (max-width: 600px){
     .hero-banner img{
         height: 250px;
+        object-fit:cover;
     }
    
     .site-header{
@@ -335,8 +336,8 @@ footer a:focus{outline: 2px solid brown;}
         padding: 1rem;
     }
     
-    .menu-card h2{
-        font-size: 1.5rem;
+    .menu-card h3{
+        font-size: 1.2rem;
     }
     .description, .category-description{
         font-size: 1rem;
@@ -344,7 +345,7 @@ footer a:focus{outline: 2px solid brown;}
     }
 
      .business-card{
-        width: 90%;
+        max-width: 90%;
         padding: 15px;
         margin: 50px auto;
     }
@@ -352,12 +353,12 @@ footer a:focus{outline: 2px solid brown;}
         margin-top: 1rem;
     }
     nav a{
-        margin: 0.1rem;
+        margin: 0.5rem;
     }
     .section-title{ 
         gap: 8px;
     }
     .menu-section h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
