@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-https://github.com/Christinecdev/daily-pour-cafe.git
+https://Christinecdev.github.io/daily-pour-cafe/
 
 A fictional café website built with HTML5 and CSS3 as part of my web front-end web development journey through FreeCodeCamp.
 
