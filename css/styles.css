@@ -259,8 +259,7 @@ body.menu{
     padding: 20px;
     text-align: center;
     font-size: 16px;
-    margin: 100px auto;
-    gap: 20px;
+    margin: 40px auto;
     max-width: 700px;
 }
 .business-card a{
@@ -280,12 +279,25 @@ body.menu{
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    display: center;
 }
 
 .business-card p{
     color: #333333;
     line-height: 1.6;
+}
+.business-feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--coffee);
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    margin: 40px auto 100px;
+    max-width: 700px
+}
+.business-feedback p{
+    margin: 0 0 10px;
 }
 
 /* ========== FOOTER ========== */
@@ -293,8 +305,15 @@ body.menu{
 footer{
     font-size:14px;
     text-align:center;
-    padding: 3rem 0;
+    padding: 0.5rem 0;
     color:var(--soft);
+}
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
 }
 
 .bottom-line{
@@ -305,6 +324,55 @@ address{
     font-style:normal;
 }
 
+.footer-links a{
+    display: inline-block;
+    color: #6F4E37;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.footer-links a:visited{
+    color: #6F4E37;
+}
+.footer-links a:hover{
+    color: #000;
+}
+.footer-links a:active{
+    color: brown;
+}
+.footer-links a:focus{
+    outline: 2px solid brown;
+    outline-offset: 2px;
+}
+footer h2{
+    margin: 0 0 10px;
+}
+footer h3{
+    margin: 18px 0 8px;
+}
+
+.feedback-link{
+    display: inline-block;
+    background-color: #6F4E37;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+.feedback-link:visited{
+    color: white;
+}
+.feedback-link:hover{
+    background-color: #D9B99B;
+    color: #6F4E37;
+}
+.feedback-link:active{
+    color: #6F4E37;
+}
+.feedback-link:focus{
+    outline: 2px solid #6F4E37;
+    outline-offset: 2px;
+}
 /* ========== RESPONSIVE DESIGN ========== */
 
 @media (max-width: 600px){
@@ -321,6 +389,19 @@ address{
         font-size: 1.8rem;
         line-height: 1.1;
     }
+     nav{
+        margin-top: 1rem;
+    }
+    nav a{
+        margin: 0.5rem;
+    }
+    /*HEADINGS*/
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
     .menu-card{
         padding: 1rem;
     }
@@ -332,22 +413,40 @@ address{
         font-size: 1rem;
         line-height: 1.6;
     }
-
-     .business-card{
-        max-width: 90%;
-        padding: 15px;
-        margin: 50px auto;
-    }
-    nav{
-        margin-top: 1rem;
-    }
-    nav a{
-        margin: 0.5rem;
-    }
     .section-title{ 
         gap: 8px;
     }
     .menu-section h2{
         font-size: 1.5rem;
+    }
+     .business-card{
+        max-width: 90%;
+        padding: 15px;
+        margin: 40px auto;
+    }
+    .business-feedback{
+        margin: 30px auto 60px;
+        padding: 0;
+    }
+    .business-card h2{
+    font-size: 1.4rem;
+    white-space: nowrap;
+   }
+    .business-feedback p{
+        max-width: 300px;
+        margin: 0 auto 10px;
+        line-height: 1.4;
+    }
+
+    footer h2{
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    footer h3{
+        font-size: 1.1rem;
+        margin: 14px 0 6px;
+    }
+    .footer-links{
+        gap: 0.75rem;
     }
 }
